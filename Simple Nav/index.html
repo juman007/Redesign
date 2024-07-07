@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Portfolio</title>
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <nav class="nav_bar">
+         <div class="logo">Portfolio</div>
+         <ul class="menu_bar">
+            <li class="menu_item"><a href="#Home" class="active">Home</a></li>
+            <li class="menu_item"><a href="#About">About</a></li>
+            <li class="menu_item"><a href="#Gallery">Gallery</a></li>
+            <li class="menu_item"><a href="#Contact">Contact</a></li>
+         </ul>
+      </nav>
+
+      <div class="slideshow-container">
+         <div class="mySlides fade">
+            <img src="Image/img_nature_wide.jpg" style="width: 100%" />
+         </div>
+
+         <div class="mySlides fade">
+            <img src="Image/img_mountains_wide.jpg" style="width: 100%" />
+         </div>
+
+         <div class="mySlides fade">
+            <img src="Image/img_snow_wide.jpg" style="width: 100%" />
+         </div>
+
+         <a class="prev" onclick="plusSlides(-1)">❮</a>
+         <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+
+      <section id="About">
+         <div class="heading_Main_Text">About</div>
+
+         <div class="About_Wrapper">
+            <div class="my_img">
+               <img
+                  src="Image/samsung.jpeg"
+                  alt=""
+                  srcset=""
+                  class="my_img_size"
+               />
+            </div>
+
+            <div class="About_Text">
+               <h3>About Me</h3>
+               <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Provident debitis nam error iusto, aliquid facere voluptate
+                  voluptatem placeat molestiae voluptatum facilis delectus
+                  neque! Nisi doloremque impedit ipsum eius nostrum. Vero harum
+                  atque a fugiat, veritatis alias mollitia, ab quam omnis dolore
+                  delectus nobis temporibus architecto voluptatem quos
+                  perferendis sit libero. Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Voluptates ab aperiam animi autem libero ex
+                  amet sunt neque dolorem adipisci error aut, facilis doloremque
+                  voluptatibus magni eius repellat quae? In. Lorem ipsum, dolor
+                  sit amet consectetur adipisicing elit. Tenetur consequuntur
+                  deserunt excepturi reiciendis, perspiciatis, saepe dolorem
+                  nulla nesciunt, beatae harum eius libero. Sint iste eveniet,
+                  perferendis non necessitatibus itaque illo.
+               </p>
+            </div>
+         </div>
+      </section>
+
+      <section id="Gallery">
+         <div class="heading_Main_Text">Gallery</div>
+
+         <div class="Gallery_Contain">
+            <div class="grid-item">
+               <img src="Image/samsung.jpeg" alt="" />
+            </div>
+            <div class="grid-item">
+               <img src="Image/samsung.jpeg" alt="" />
+            </div>
+            <div class="grid-item">
+               <img src="Image/samsung.jpeg" alt="" />
+            </div>
+            <div class="grid-item">
+               <img src="Image/samsung.jpeg" alt="" />
+            </div>
+            <div class="grid-item">
+               <img src="Image/samsung.jpeg" alt="" />
+            </div>
+            <div class="grid-item">
+               <img src="Image/samsung.jpeg" alt="" />
+            </div>
+         </div>
+      </section>
+
+      <section id="Contact">
+         <div class="heading_Main_Text">Contact Us</div>
+
+         <form
+            action="Userinformation/action.php"
+            method="POST"
+            class="Contact_Form"
+         >
+            <input
+               type="text"
+               name="name"
+               id="name"
+               placeholder="Your Name"
+               required
+            />
+            <input
+               type="email"
+               name="email"
+               id="email"
+               placeholder="Your Email"
+               required
+            />
+            <input
+               type="number"
+               name="number"
+               id="email"
+               placeholder="Your Mobile Number"
+               required
+            />
+            <textarea
+               name="comment"
+               id="comment"
+               placeholder="Do a valuable Comment"
+               required
+            ></textarea>
+            <button type="submit" class="Submit_btn">Submit</button>
+         </form>
+      </section>
+
+      <section id="Footer">
+         <p>
+            Copyrigt © To Portfolio 2024 | Designed By
+            <span>Juman Saikia</span>
+         </p>
+      </section>
+
+      <script src="script.js"></script>
+   </body>
+</html>
